@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Tickethack cart</title>
+    <link rel="stylesheet" href="cart.css" />
+  </head>
+  <body>
+    <!-- *************** Navigation **************** -->
+
+    <div id="navigation">
+      <nav>
+        <div class="logo">
+            <a href="/frontend-tickethack/index.html">Tickethack</a>
+          </div>
+        <ul class="list-item-nav">
+          <li><a href="/frontend-tickethack/cart.html">Carts</a></li>
+          <li><a href="/frontend-tickethack/booking.html">Bookings</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- ********** display cart ************* -->
+
+    <div id="cart">
+      <div id="my-cart">
+        <p>My cart</p>
+        <div class="train">
+          <div class="itinerary">
+            <p class="departure">Paris</p>
+            <p>></p>
+            <p class="arrival">Lyon</p>
+          </div>
+          <p class="departure-time">16:23</p>
+          <p class="price">126€</p>
+          <button id="btn-delete">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+
+      <div id="basket-price">
+        <div class="total-price">
+          <p class="total">Total: 103€</p>
+          <input type="button" value="Purchase" id="btn-purchase" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+<!-- ************* no ticket container ************ -->
+
+
+<!-- <div id="no-ticket-message">
+    <p>No ticket in your cart.</p>
+    <p>Why not plan trip ?</p>
+</div> -->

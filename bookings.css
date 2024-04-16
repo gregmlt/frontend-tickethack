@@ -1,0 +1,108 @@
+*,::before,::after{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width : 100%;
+    height: 100vh;
+    background-color: #F1F4F3;
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* ************** Navigation ************** */
+
+#navigation {
+    width: 100%;
+    height: 90px;
+    background-color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px ;
+}
+
+.list-item-nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 200px;
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: black;
+}
+
+li a:hover {
+    color: #4FAA92;
+}
+
+.logo > a {
+    font-size: 28px;
+    color: #4FAA92;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ************ booking ************** */
+
+#booking {
+    width: 900px;
+    height: 300px;
+    background-color: white;
+    border-radius: 16px;
+    margin: 160px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#my-booking {
+    width: 100%;
+    height: 220px;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+
+}
+.train {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F7F1F0;
+    border-radius: 8px;
+    padding: 20px 30px;
+    margin-bottom: 10px;
+}
+.itinerary {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.msg-from-tickethack {
+    width: 50%;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #4FAA92;
+}
+
+hr {
+    color: black;
+    width: 100%;
+}

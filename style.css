@@ -1,0 +1,233 @@
+*, ::before,::after{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width : 100%;
+    height: 100vh;
+    background-image: url(Assets/images/background.jpg);
+    background-color: #4FAA92;
+    background-position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* ************** Navigation ************** */
+
+#navigation {
+    width: 100%;
+    height: 90px;
+    background-color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px ;
+}
+
+.list-item-nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 200px;
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: black;
+}
+
+li a:hover {
+    color: #4FAA92;
+}
+
+.logo > a {
+    font-size: 28px;
+    color: #4FAA92;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* ************ Hero Section **************** */
+
+#hero-section {
+    margin: 50px auto;
+    width: 1200px;
+    height: 100px;
+    /* background-color: white; */
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 3.2rem;
+    color: #ffffff;
+}
+.title p {
+    font-size: 1.2rem;
+    padding-top: 20px;
+    color: #ffffff;
+
+}
+
+
+/* ********** Booking section ************ */
+
+
+#booking-section {
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 420px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    justify-content: space-between;
+}
+
+input {
+    width: 100%;
+    height: 54px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    background-color: rgb(218, 218, 218);
+    border: none;
+    border-radius: 8px;
+}
+
+#departure {
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 0.9rem;
+}
+
+#start {
+    margin-top: 60px;
+    color: #5c5c5c;
+}
+
+#btn-search{
+    border-radius: 8px;
+    padding : 10px 20px;
+    background-color: #4FAA92;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#btn-search:hover {
+    background-color: #4faa92;
+    background-image: linear-gradient(160deg, #4faa92 0%, #01ffa7 100%);
+}
+
+/* *********** Display right card ********** */
+
+
+#display-card {
+    width: 420px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    display: flex;
+    /* overflow: hidden;
+    overflow: scroll; */
+
+}
+
+.display-list-content01 {
+    display: flex;
+    display : none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    justify-content: space-around;
+}
+
+
+.display-list-content02 {
+    display: flex;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    justify-content: space-around;
+}
+
+img {
+    width: 200px;
+}
+ hr {
+    border: 1px solid #4FAA92;
+    width: 100%;
+ }
+
+
+ /* ********* SELECT YOUR TRAIN ******** */
+
+
+#display-list-of-trains {
+    padding: 30px;
+    margin: 0 auto;
+    width: 95%;
+    overflow: hidden;
+    overflow: scroll;
+}
+
+#select-your-train {
+    width: 100%;    
+}
+.train {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F7F1F0;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+.itinerary {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#btn-book {
+    border-radius: 4px;
+    width: 80px;
+    height: 44px;
+    padding : 10px 10px;
+    background-color: #4FAA92;
+    color: #ffffff;
+    cursor: pointer;
+} 
+
+#btn-book:hover {
+    background-color: #4faa92;
+    background-image: linear-gradient(160deg, #4faa92 0%, #01ffa7 100%);
+}
+
+
+
