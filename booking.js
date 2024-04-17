@@ -6,7 +6,7 @@
 moment.locale("fr");
 
 function getAllTripsFromBooking() {
-  fetch("backend-tickethack-self.vercel.app/bookings/get/allTripsBooked")
+  fetch("http://backend-tickethack-self.vercel.app/bookings/get/allTripsBooked")
     .then((response) => response.json())
     .then((data) => data.allTripsBooked)
     .then((allTrips) => {
