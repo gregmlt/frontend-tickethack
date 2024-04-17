@@ -31,8 +31,14 @@ function searchTrain() {
                     `;
             document.querySelector(".display-list-content01").style.display =
               "none";
+            document.querySelector(".display-list-content02").style.display =
+              "none";
           });
         } else {
+            document.querySelector(".display-list-content01").style.display =
+              "none";
+            document.querySelector(".display-list-content02").style.display =
+              "flex";
           console.log("no trip found");
         }
         addToCart();
