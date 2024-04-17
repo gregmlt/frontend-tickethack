@@ -84,7 +84,9 @@ function purchase() {
           .then((response) => response.json)
           .then((data) => {
             console.log(data);
-            window.location.assign("/frontend/booking.html");
+            window.location.assign(
+              "https://frontend-tickethack-vert.vercel.app/booking.html"
+            );
           });
       }
     });

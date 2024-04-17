@@ -53,7 +53,9 @@ function addToCart() {
         .then((response) => response.json())
         .then((data) => {
           console.log(data);
-          window.location.assign("/frontend/cart.html");
+          window.location.assign(
+            "https://frontend-tickethack-vert.vercel.app/cart.html"
+          );
         });
     });
   }
