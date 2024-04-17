@@ -12,8 +12,7 @@ function searchTrain() {
     )
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
-        if (data.allTrips == "") {
+        if (data.allTrips === false) {
           data.allTrips.forEach((trip) => {
             const date = moment(trip.date).format("LT");
             document.querySelector("#display-card").innerHTML += `
