@@ -41,7 +41,6 @@ function getAllTripsFromCart() {
         purchase();
       }
       const trainClass = document.querySelectorAll(".train");
-      console.log(trainClass.length);
       deleteOneTripFromCart();
       return html;
     });
