@@ -5,7 +5,7 @@
 /* ******************************************* */
 
 function getAllTripsFromCart() {
-  fetch("http://backend-tickethack-self.vercel.app/carts/get/alltrips")
+  fetch("https://backend-tickethack-self.vercel.app/carts/get/alltrips")
     .then((response) => response.json())
     .then((data) => {
       let html = "";
@@ -52,7 +52,7 @@ function deleteOneTripFromCart() {
     btnsDelete[i].addEventListener("click", function () {
       const id = this.parentNode.id;
       fetch(
-        `http://backend-tickethack-self.vercel.app/carts/delete/onetrip/${id}`,
+        `https://backend-tickethack-self.vercel.app/carts/delete/onetrip/${id}`,
         {
           method: "DELETE",
           headers: { "Content-Type": "application/json" },
@@ -75,7 +75,7 @@ function purchase() {
       const trainClass = document.querySelectorAll(".train");
       for (let i = 0; i < trainClass.length; i++) {
         fetch(
-          "http://backend-tickethack-self.vercel.app/bookings/post/allTripsBooked",
+          "https://backend-tickethack-self.vercel.app/bookings/post/allTripsBooked",
           {
             method: "POST",
             headers: { "Content-Type": "application/json" },
