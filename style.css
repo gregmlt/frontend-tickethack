@@ -151,17 +151,20 @@ label {
   width: 420px;
   background-color: #ffffff;
   border-radius: 16px;
+  padding-top: 10px;
   display: flex;
-  /* overflow: hidden;
-    overflow: scroll; */
+  flex-direction: column;
+  overflow: hidden;
+  overflow: scroll;
 }
 
 .display-list-content01 {
   display: flex;
-  display: none;
+  /* display: none; */
   flex-direction: column;
   align-items: center;
   width: 100%;
+  height: 100%;
   background-color: #ffffff;
   padding: 40px;
   border-radius: 16px;
@@ -174,6 +177,7 @@ label {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  height: 100%;
   background-color: #ffffff;
   padding: 40px;
   border-radius: 16px;
@@ -190,16 +194,18 @@ hr {
 
 /* ********* SELECT YOUR TRAIN ******** */
 
-#display-list-of-trains {
+/* #display-list-of-trains {
   padding: 30px;
   margin: 0 auto;
   width: 95%;
-  overflow: hidden;
-  overflow: scroll;
-}
+  overflow: hidden; 
+  overflow: scroll; 
+} */
 
 #select-your-train {
   width: 100%;
+  padding: 0 30px;
+
 }
 .train {
   display: flex;
