@@ -8,7 +8,7 @@ function searchTrain() {
     const date = document.querySelector("#date").value;
     const formattedDate = new Date(date).getTime() / 1000;
     fetch(
-      `http://localhost:3000/trips/${departure}/${arrival}/${formattedDate}`
+      `https://backend-tickethack-self.vercel.app/trips/${departure}/${arrival}/${formattedDate}`
     )
       .then((response) => response.json())
       .then((data) => {
@@ -51,7 +51,7 @@ function addToCart() {
   for (let i = 0; i < btnClass.length; i++) {
     btnClass[i].addEventListener("click", function () {
       id = this.parentNode.id;
-      fetch("http://localhost:3000/carts/post/onetrip", {
+      fetch("https://backend-tickethack-self.vercel.app/carts/post/onetrip", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ id }),
